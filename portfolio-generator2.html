@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel - Editor -->
+        <div class="editor-panel">
+            <div class="panel-header">
+                <span class="panel-title">● PORTFOLIO GENERATOR </span>
+                <span class="save-status" id="saveStatus" role="status">Connecting...</span>
+            </div>
+
+            <!-- Personal Section -->
+            <div class="section-label">Personal</div>
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" id="name" placeholder="Enter your name:">
+            </div>
+
+            <div class="form-group">
+                <label>Role</label>
+                <input type="text" id="role" placeholder="Enter your Role:">
+            </div>
+
+            <div class="form-group">
+                <label>Bio</label>
+                <textarea id="bio" placeholder="Enter a description."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter a Personal Email:">
+            </div>
+
+            <div class="form-group">
+                <label>Location</label>
+                <input type="text" id="location" placeholder="Enter your Location:">
+            </div>
+
+            <div class="form-group">
+                <label>Profile Picture</label>
+                <div class="file-input-wrapper">
+                    <label class="file-input-label">
+                        Choose file
+                        <input type="file" id="profilePicture" accept="image/*">
+                    </label>
+                    <div class="file-name" id="fileName">No file selected</div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="section-label" style="margin-top: 32px;">Projects</div>
+
+            <div class="form-group">
+                <label>Project Title</label>
+                <input type="text" id="projectTitle" placeholder="Enter project name:">
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea id="projectDesc" placeholder="Describe your project..."></textarea>
+            </div>
+
+            <div class="btn-group">
+                <button class="add-project-btn" onclick="addProject()">+ Add Project</button>
+                <button class="download-btn" onclick="downloadPortfolio()" title="Download your portfolio as HTML">⬇ Download</button>
+            </div>
+
+            <div class="projects-list" id="projectsList"></div>
+        </div>
+
+        <!-- Right Panel - Preview -->
+        <div class="preview-panel">
+            <div class="preview-header">
+                <div class="preview-label">Live Preview</div>
+                <div class="preview-actions">
+                    <button class="action-btn download" onclick="downloadPortfolio()" title="Download portfolio">📥 Download</button>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <!-- Profile Card -->
+                <div class="profile-card" id="profileCard">
+                    <div class="profile-image" id="profileImage">👤</div>
+                    <div class="profile-name" id="displayName">Your Name</div>
+                    <div class="profile-role" id="displayRole">Your Role</div>
+                    <div class="profile-bio" id="displayBio">Your bio appears here</div>
+                    <div class="profile-info">
+                        <div class="info-item" id="emailDisplay" style="display:none;"></div>
+                        <div class="info-item" id="locationDisplay" style="display:none;"></div>
+                    </div>
+                </div>
+
+                <!-- Selected Work Section -->
+                <div class="selected-work">
+                    <div class="work-title">Selected work</div>
+                    <div id="projectsDisplay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
