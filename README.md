@@ -10,26 +10,6 @@
 [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 ---
 
-## ✨ Features
-
-- **⚡ Instant Portfolio Generation:** Automatically fetches and parses your GitHub data (repos, stats, languages, contributions) to build a personalized web portfolio.
-- **🤖 AI-Powered Enhancement:** Uses advanced LLMs to summarize your experience, optimize project descriptions, and write professional bios.
-- **🎨 Modern Templates & Themes:** Choose from multiple clean, responsive, and fully customizable themes built with Tailwind CSS.
-- **📊 GitHub Stats & Badges:** Seamlessly integrate GitHub activity stats, streak trackers, most-used language charts, and custom skill badges.
-- **📄 Profile README Maker:** Instantly export clean Markdown code optimized for your special GitHub profile repository (`username/username`).
-- **🚀 One-Click Export & Deployment:** Download your portfolio code or deploy instantly to platforms like Vercel or GitHub Pages.
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React / Next.js (App Router), TypeScript, Tailwind CSS
-- **API & Data:** GitHub REST / GraphQL API
-- **AI Integration:** Google Gemini / OpenAI API (for smart bio and project text generation)
-- **Styling & UI:** Shadcn UI / Custom Tailwind components
-
----
-
 ## 🚀 Getting Started
 
 Follow these steps to run the project locally:
